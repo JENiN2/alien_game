@@ -18,7 +18,7 @@ class Game:
         self.screen = pygame.display.set_mode(
             (settings.screen_width, settings.screen_height)
         )
-        self.background = pygame.image.load("images/purple_background2.jpg")
+        self.background = pygame.image.load("assets/images/purple_background2.jpg")
         self.ship = Ship(screen=self.screen, ai_settings=settings)
         self.play_button = Button(self.screen, 'Play')
         self.stats = GameStats(settings)

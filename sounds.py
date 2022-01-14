@@ -5,14 +5,14 @@ class SoundFX:
 
     def __init__(self):
         self.music()
-        self.ship = pygame.mixer.Sound("sounds/ship_moving.ogg")
+        self.ship = pygame.mixer.Sound("assets/sounds/ship_moving.ogg")
 
-        self.shoot = pygame.mixer.Sound("sounds/laser_shoot.wav")
-        self.expl = pygame.mixer.Sound("sounds/explosion.wav")
-        self.play = pygame.mixer.Sound("sounds/button_click.wav")
+        self.shoot = pygame.mixer.Sound("assets/sounds/laser_shoot.wav")
+        self.expl = pygame.mixer.Sound("assets/sounds/explosion.wav")
+        self.play = pygame.mixer.Sound("assets/sounds/button_click.wav")
 
     def music(self):
-        pygame.mixer.music.load("music/space_ambient.wav")
+        pygame.mixer.music.load("assets/music/space_ambient.wav")
         pygame.mixer.music.play(-1)
 
     def shoot_fx(self):
