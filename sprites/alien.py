@@ -11,7 +11,7 @@ class Alien(Sprite):
         self.ai_settings = settings
 
         # Загрузка изображения пришельца и назначение атрибута rect.
-        self.image = pygame.image.load('images/alien2.bmp')
+        self.image = pygame.image.load('assets/images/alien2.bmp')
         self.image.set_colorkey((255, 255, 255))
         self.rect = self.image.get_rect()
 

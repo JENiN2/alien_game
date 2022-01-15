@@ -9,7 +9,7 @@ class Bullet(Sprite):
         super(Bullet, self).__init__()
         self.screen = screen
 
-        self.image = pygame.image.load('images/bullet.bmp')
+        self.image = pygame.image.load('assets/images/bullet.bmp')
         self.image.set_colorkey((255, 255, 255))
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
