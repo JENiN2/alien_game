@@ -18,7 +18,6 @@ class Game:
         self.screen = pygame.display.set_mode(
             (settings.screen_width, settings.screen_height)
         )
-        self.background = pygame.image.load("assets/images/purple_background2.jpg")
         self.ship = Ship(screen=self.screen, ai_settings=settings)
         self.play_button = Button(self.screen, 'Play')
         self.stats = GameStats(settings)
@@ -138,7 +137,7 @@ class Game:
             pygame.mouse.set_visible(True)
 
     def update_screen(self):
-        self.screen.blit(self.background, (0, 0))
+        self.screen.blit(self.settings.background, (0, 0))
         # self.screen.fill(self.settings.bg_color)
         # Все пули выводятся позади изображений корабля и пришельцовю
         for bullet in self.bullets.sprites():
