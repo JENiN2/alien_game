@@ -16,5 +16,3 @@ A simple game similar to Space invaders.
 ## Author Info
 
 - e-mail - hlfan2@yandex.ru
-
-[Back To The Top](#Alien game)
